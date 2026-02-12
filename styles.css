@@ -138,23 +138,28 @@ section p {
     font-weight: 500;
     font-size: 1.2rem;
     color: #fff;
-    transition: background-color 0.2s ease, color 0.2 ease, transform 0.2 ease;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
     border: 1px solid #1e4fd8;
     border-radius: 10px;
     padding: 5px 10px;
     background-color: #2563e2;
-    
+
     cursor: pointer;
 
 }
+.link-wrapper {
+    text-align: center;
+}
+    
+
 
 
 .project-link:hover {
     background-color: #1e4fd8;
-    
+    transform: scale(1.05);
     border-radius: 10px;
     padding: 5px 10px;
-    transform: scale(1.05)
+    
 }
 .video-form {
     width: 100%;
@@ -247,4 +252,9 @@ address p {
     font-size: 1.125rem;
     font-style: normal;
 
+}
+@media (min-width: 768px) {
+    .nav-link {
+        font-size: 1.125rem;
+    }
 }
