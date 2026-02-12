@@ -36,8 +36,9 @@ body {
     align-items: center;
     max-width: 1100px;
     min-width: 320px;
-    padding:  0 1rem;
-    margin: 0 auto;
+    padding-top: 1rem;
+    margin: 0 auto 2rem;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
 }
 #heading {
     font-family: 'Poppins', sans-serif;
@@ -51,11 +52,11 @@ body {
     height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     display: block;
-
+border-radius: 10px;
 }
 .nav-link {
     text-decoration: none;
-    color: #222;
+    color: #fff;
     font-weight: 500;
     transition: background-color 0.2s ease, color 0.2s ease;
     font-size: 0.875rem;
@@ -76,9 +77,10 @@ align-items: center;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: rgba(34, 34, 34, 0.85);
+    color: #fff;
     z-index: 1000;
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     overflow-x: hidden;
 }
 .nav-link:hover {
@@ -104,12 +106,25 @@ li {
   margin: 0 auto;  
 }
 section {
-    padding: 3rem 0;
     
+    border-top: 1px solid #ddd;
+    padding: 3rem 2rem;
     
 }
+#freecodecamp {
+    background-color: #f0f7ff;
+    border-radius: 10px 10px 0 0;
+}
+#about {
+    background-color: #f7fff2;
 
-
+}
+#project {
+    background-color: #fff8f0;
+}
+#contact {
+    background-color: #f5f0ff;
+}
 h2 {
     text-align: center;
     font-size: 1.5rem;
@@ -162,13 +177,18 @@ section p {
     
 }
 .video-form {
-    width: 100%;
+    width: 90%;
     max-width: 1100px;
     min-width: 320px;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    
+   align-items: center;
+   border-radius: 10px;
+   padding: 0 1rem;
+   background-color: rgba(0, 0, 0, 0.2);
+   margin-top: 2rem auto 2rem;
+   box-sizing: border-box; 
 }
 
 
@@ -227,7 +247,9 @@ margin-top: 55px;
     display: block;
     direction: ltr;
     text-align: left;
-    
+    max-width: 1100px;
+    min-width: 220px;
+    width: 98%;
 }
 footer {
     background-color: #222;
@@ -269,5 +291,10 @@ address p {
 @media (min-width: 768px) {
     .nav-link {
         font-size: 1.125rem;
+    }
+}
+@media (min-width: 768px) {
+    .video-form {
+        width: 98%;
     }
 }
