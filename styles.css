@@ -308,3 +308,8 @@ address p {
         width: 98%;
     }
 }
+@media (max-width: 480px) {
+    #nav-bar ul {
+        gap: 10px;
+    }
+}
