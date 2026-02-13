@@ -63,7 +63,7 @@ border-radius: 10px;
     transition: background-color 0.2s ease, color 0.2s ease, tranform 0.2s ease;
     font-size: 0.875rem;
     cursor: pointer;
-    padding: 10px 15px;
+    padding: 8px 12px;
 }
 ul {
     list-style: none;
@@ -83,7 +83,7 @@ align-items: center;
     background-color: rgba(34, 34, 34, 0.85);
     color: #fff;
     z-index: 1000;
-    padding-right: 1.5rem;
+    padding: 0.5rem 1.5rem;
     overflow-x: hidden;
 }
 .nav-link:hover {
