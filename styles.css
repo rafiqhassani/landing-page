@@ -31,7 +31,7 @@ body {
     font-weight: 500;
 }
 #header {
-    width: 98%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,7 +48,7 @@ body {
     font-weight: 600;
     font-size: 2.5rem;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 #header #header-img {
     max-width: 98%;    
@@ -76,6 +76,14 @@ ul {
 display: flex;
 gap: 20px;
 align-items: center;
+justify-content: flex-start;
+padding:  1rem;
+margin: 0;
+list-style: none;
+}
+#nav-bar ul li a {
+    padding: 0.5rem;
+    flex-shrink: 0;
 }
 #nav-bar {
     display: flex;
@@ -94,7 +102,7 @@ align-items: center;
     color: #fff;
     z-index: 1000;
     padding: 0 1rem;
-    overflow-x: hidden;
+    overflow: visible;
 }
 #nav-bar li {
     flex-shrink: 1;
@@ -329,12 +337,16 @@ address p {
         width: 98%;
     }
 }
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     #nav-bar {
         padding: 0.5rem 1rem;
     }
     #nav-bar ul {
         gap: 10px;
+        flex-direction: column;
+    }
+    #nav-bar ul li a {
+        margin-right: 0;
     }
 }
 @media (max-width: 400px) {
